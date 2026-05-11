@@ -2,7 +2,7 @@
 
 > A production-grade Retrieval-Augmented Generation (RAG) chatbot for medical Q&A, built entirely on open-source models. No API keys. No cloud costs. Runs on your own machine.
 
-**Live Demo:** [your-username-medrag.hf.space](https://huggingface.co/spaces/sharan099/Med_RAG)
+**Live Demo:** (https://huggingface.co/spaces/sharan099/Med_RAG)
 
 ---
 
