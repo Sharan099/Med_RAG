@@ -1,0 +1,26 @@
+# Large data files — don't push to GitHub
+chroma_db/
+*.npy
+*.pkl
+chunks_bm25.csv
+rag_eval_log.csv
+eval_output/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# Keep these
+!requirements.txt
+!README.md
+!Dockerfile
+!start.sh
+!backend_api.py
+!frontend.html
+!phase1_indexing.py
+!evaluate_rag.py
+!optimize_prompts.py
