@@ -1,8 +1,8 @@
-# 🏥 MedRAG — Medical AI Chatbot (Local, Free, $0/query)
+🏥 MedRAG — Medical AI Chatbot (Local, Free, 0€/query)
 
 > A production-grade Retrieval-Augmented Generation (RAG) chatbot for medical Q&A, built entirely on open-source models. No API keys. No cloud costs. Runs on your own machine.
 
-**Live Demo:** [your-username-medrag.hf.space](https://huggingface.co/spaces/YOUR_USERNAME/medrag-chatbot)
+**Live Demo:** [your-username-medrag.hf.space](https://huggingface.co/spaces/sharan099/Med_RAG)
 
 ---
 
@@ -12,14 +12,14 @@ Most RAG tutorials use OpenAI + Pinecone and cost money per query. MedRAG uses:
 
 | Component | Choice | Why |
 |---|---|---|
-| LLM | gemma2:2b via Ollama | Free, runs locally, no API key |
+| LLM | llama3.2:1b  via Ollama | Free, runs locally, no API key |
 | Embeddings | BGE-base-en-v1.5 | State-of-art retrieval, 768 dims |
 | Vector DB | ChromaDB | Persistent, no server needed |
 | Retrieval | Hybrid BM25 + Semantic + RRF | Better than semantic-only |
 | Reranking | Cross-encoder MiniLM | Filters noise from retrieval |
 | Prompting | DSPy ChainOfThought | Self-optimizing prompts |
 | Pipeline | FastAPI + Async + Queue | Production-ready, handles concurrency |
-| Cost | **$0/query** | vs $0.005/query with OpenAI |
+| Cost | **€0/query** | vs $0.005/query with OpenAI |
 
 ---
 
@@ -42,7 +42,7 @@ Query Embedding (BGE-base)
           DSPy ChainOfThought Prompt
                     │
                     ▼
-          gemma2:2b via Ollama
+          llama3.2:1b  via Ollama
                     │
                     ▼
           Answer + Sources + Confidence
@@ -59,7 +59,7 @@ Query Embedding (BGE-base)
 | IDK Accuracy | 80.0% |
 | Avg Chunk Score | 0.851 |
 | Avg Latency | ~13-16s (CPU) |
-| Cost per query | **$0** |
+| Cost per query | **€0** |
 
 ---
 
@@ -94,7 +94,7 @@ open http://localhost:8001
 
 ```bash
 # 1. Install Ollama: https://ollama.com
-ollama pull gemma2:2b
+ollama pull llama3.2:1b 
 
 # 2. Clone and install
 git clone https://github.com/YOUR_USERNAME/medrag-chatbot.git
@@ -102,7 +102,7 @@ cd medrag-chatbot
 pip install -r requirements.txt
 
 # 3. Build the index (run ONCE — takes ~20 mins)
-python phase1_indexing.py
+python phase1.py
 
 # 4. Start server
 uvicorn backend_api:app --port 8001
@@ -119,7 +119,7 @@ open http://localhost:8001
 medrag-chatbot/
 ├── backend_api.py          # FastAPI backend — async pipeline + DSPy
 ├── frontend.html           # Chat UI — streaming, confidence badges
-├── phase1_indexing.py      # Index builder — chunking + embedding
+├── phase1.py      # Index builder — chunking + embedding
 ├── evaluate_rag.py         # Evaluation — 6 metrics dashboard
 ├── optimize_prompts.py     # DSPy prompt optimization
 ├── Dockerfile              # Docker deployment
@@ -175,6 +175,6 @@ MIT License — free to use, modify, deploy.
 
 Built by [Your Name] — Aspiring AI Engineer
 
-- GitHub: [github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [linkedin.com/in/YOUR_PROFILE](https://linkedin.com/in/YOUR_PROFILE)
-- HuggingFace: [huggingface.co/YOUR_USERNAME](https://huggingface.co/YOUR_USERNAME)
+- GitHub: [github.com/YOUR_USERNAME](https://github.com/Sharan099)
+- LinkedIn: [linkedin.com/in/YOUR_PROFILE](https://www.linkedin.com/in/sairavichandran/)
+- HuggingFace: [huggingface.co/YOUR_USERNAME](https://huggingface.co/sharan099)
