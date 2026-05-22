@@ -173,8 +173,8 @@ MIT License — free to use, modify, deploy.
 
 ## Author
 
-Built by [Your Name] — Aspiring AI Engineer
+Built by [Sai sharan Ravichandran] — Aspiring AI Engineer
 
-- GitHub: [github.com/YOUR_USERNAME](https://github.com/Sharan099)
-- LinkedIn: [linkedin.com/in/YOUR_PROFILE](https://www.linkedin.com/in/sairavichandran/)
-- HuggingFace: [huggingface.co/YOUR_USERNAME](https://huggingface.co/sharan099)
+- GitHub: [github.com/Sharan099](https://github.com/Sharan099)
+- LinkedIn: [linkedin.com/in/sairavichandran](https://www.linkedin.com/in/sairavichandran/)
+- HuggingFace: [huggingface.co/sharan099](https://huggingface.co/sharan099)
